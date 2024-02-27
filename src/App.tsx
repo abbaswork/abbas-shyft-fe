@@ -6,7 +6,7 @@ import {
 import NavBar from "./components/navbar/navbar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from "./pages/Home";
-import { CreateStudentsPage } from "./pages/NewStudents";
+import { NewStudents } from "./pages/NewStudents";
 import { StudentsList } from "./pages/StudentsList";
 
 export const App = () => {
@@ -28,11 +28,11 @@ export const App = () => {
         <NavBar links={links} />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/new-students" element={<CreateStudentsPage />} />
+          <Route path="/new-students" element={<NewStudents />} />
           <Route path="/students-list" element={<StudentsList />} />
-          <Route path="/new-courses" element={<CreateStudentsPage />} />
+          <Route path="/new-courses" element={<NewStudents />} />
           <Route path="/courses-list" element={<StudentsList />} />
-          <Route path="/new-results" element={<CreateStudentsPage />} />
+          <Route path="/new-results" element={<NewStudents />} />
           <Route path="/results-list" element={<StudentsList />} />
         </Routes>
       </ChakraProvider>

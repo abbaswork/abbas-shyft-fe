@@ -40,7 +40,7 @@ const StudentForm: React.FC = () => {
         });
     };
 
-    const AllValid = formData.firstName.valid && formData.familyName.valid;
+    const AllValid = formData.firstName.valid && formData.familyName.valid && formData.dateOfBirth.valid && formData.email.valid;
 
 
     return (
